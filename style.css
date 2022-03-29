@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	padding: 150px;
+	margin: 50px;
+	background-color: #F5F5F5;
+}
+
+.container{
+	background-color: #FFFFFF;
+}

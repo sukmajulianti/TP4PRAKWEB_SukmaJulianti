@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css" />
+	<title>Tugas Praktikum-4 2009110 Sukma Julianti</title>
+</head>
+
+<body>
+<div class="container">
+<h1 style="text-align: center;">Biodata</h1>
+ <form id="form1" name="form1" onsubmit="return false">
+	  <div class="form-group">
+		<label for="name">Nama Lengkap</label>
+		<input type="text" class="form-control" id="exampleInputName1" placeholder="Nama Lengkap" required>
+	  </div>
+	  <div class="form-group">
+		<label for="date">Tanggal Lahir</label>
+		<input type="date" class="form-control" id="exampleInputDate1" placeholder="" required>
+	  </div>
+	  
+	  <div class="form-group">
+	  <p>Jenis Kelamin</p>
+	  <div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Laki-laki">
+	  <label class="form-check-label" for="male">Laki-laki</label>
+		</div>
+	  <div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Perempuan">
+	  <label class="form-check-label" for="female">Perempuan</label>
+		</div>
+	  <div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="Other">
+	  <label class="form-check-label" for="other">Other</label>
+	</div>
+	</div>
+	
+	
+	<div class="form-group">
+	 <p>Hobi</p>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Ngoding">
+	  <label class="form-check-label" for="ngoding">Ngoding</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Rebahan">
+	  <label class="form-check-label" for="rebahan">Rebahan</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Melamun">
+	  <label class="form-check-label" for="melamun">Melamun</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="Baca Buku">
+	  <label class="form-check-label" for="baca">Baca Buku</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="Nonton Youtube">
+	  <label class="form-check-label" for="nonton">Nonton Youtube</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="Dengerin Lagu">
+	  <label class="form-check-label" for="mendengarkan">Dengerin Lagu</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="Other">
+	  <label class="form-check-label" for="lainnya">Other</label>
+	</div>
+	</div>
+	
+	 <div class="form-group">
+	 <label for="agama">Agama</label>
+      <select id="inputReligion" class="form-control">
+        <option selected>Islam</option>
+        <option>Budha</option>
+		<option>Hindu</option>
+		<option>Katolik</option>
+		<option>Tao</option>
+		<option>Protestan</option>
+		<option>Other</option>
+      </select>
+	  </div>
+	  
+	  <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" onclick="output()">Submit</button>    
+    </form>
+	
+	
+	<table class="table" style="margin-top: 40px;">
+        <thead>
+          <tr>
+            <th scope="col">Label</th>
+            <th scope="col">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Nama</th>
+            <td id="tampilkanNama"></td>
+          </tr>
+          <tr>
+            <th scope="row">Tanggal Lahir</th>
+            <td id="tampilkanTTL"></td>
+          </tr>
+          <tr>
+            <th scope="row">Jenis Kelamin</th>
+            <td id="tampilkanGender"></td>
+          </tr>
+          <tr>
+            <th scope="row">Hobi</th>
+            <td id="tampilkanHobi"></td>
+          </tr>
+          <tr>
+            <th scope="row">Agama</th>
+            <td id="tampilkanAgama"></td>
+          </tr>
+          <tr>
+            <th scope="row">Pesan</th>
+            <td id="tampilkanPesan"></td>
+          </tr>
+        </tbody>
+    </table>
+	</div>
+    <!-- file JavaScript -->
+    <script src="Script.js"></script>
+</body>
+</html>
